@@ -21,7 +21,7 @@ def show_servers(game):
     clear_frame()
     add_back_button(show_main_menu)
     ctk.CTkLabel(frame, text=f"Выбрано: {game}", font=("Arial", 18), text_color="#E0E0E0").pack(pady=10)
-    servers = ["HolyWorld", "Funtime"] if game == "Minecraft" else ["Servers"]
+    servers = ["Servers"] if game == "Minecraft" else ["Arizona"]
     for server in servers:
         ctk.CTkButton(frame, text=server, fg_color="#FFCA28", text_color="black", command=lambda s=server: show_calculator(game, s)).pack(pady=5)
     add_source_button()
@@ -38,7 +38,10 @@ def show_calculator(game, server):
     entry_amount = ctk.CTkEntry(frame)
     entry_amount.pack()
     ctk.CTkButton(frame, text="Посчитать по курсу", fg_color="#29B6F6", text_color="black", command=lambda: calculate_currency(entry_kurs, entry_amount)).pack(pady=5)
-    ctk.CTkButton(frame, text="Прибавить комиссию", fg_color="#FFB74D", text_color="black", command=lambda: calculate_with_fee(entry_amount)).pack(pady=5)
+    
+    if not (game == "Minecraft" and server == "Servers"):
+        ctk.CTkButton(frame, text="Прибавить комиссию", fg_color="#FFB74D", text_color="black", command=lambda: calculate_with_fee(entry_amount)).pack(pady=5)
+    
     add_source_button()
 
 def calculate_currency(entry_kurs, entry_amount):
