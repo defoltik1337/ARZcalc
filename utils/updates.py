@@ -2,7 +2,7 @@ import requests
 import subprocess
 import os
 
-GITHUB_VERSION_URL = "https://raw.githubusercontent.com/defoltik1337/ARZcalc/main/utils/version.txt"
+GITHUB_VERSION_URL = "https://raw.githubusercontent.com/defoltik1337/ARZcalc/refs/heads/main/utils/version.txt"
 UPDATE_SCRIPT_URL = "https://github.com/defoltik1337/ARZcalc/archive/refs/heads/master.zip"
 LOCAL_VERSION_FILE = "utils/version.txt"
 UPDATE_FOLDER = "update"
