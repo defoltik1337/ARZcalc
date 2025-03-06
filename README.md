@@ -15,6 +15,7 @@
 1. Скачайте и установите [Python](https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe).
     1. При установке поставьте галочку у `Add python.exe to PATH` на первом экране установки.
 2. Скачайте [Arizona Calculator](https://github.com/defoltik1337/ARZcalc/archive/refs/heads/master.zip).
+3. Запустите файл setup.bat (он установит всё что нужно, и запустит программу!)
 
 ## ⭐ Star it
 
