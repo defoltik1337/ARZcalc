@@ -35,3 +35,7 @@
 <h3 align="center">1.2.1</h3>
 <h5 align="center">Что было добавлено?</h5>
 Изменён отдел minecraft (убраны сервера)
+
+<h3 align="center">1.2.2</h3>
+<h5 align="center">Что было добавлено?</h5>
+Добавлен Auto-Update
